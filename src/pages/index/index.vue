@@ -16,7 +16,7 @@
     </p>
 
     <p style="margin-top: 1rem">
-      <button @click="goTo('/login', aaa)">测试goTo方法，去登录页面</button>
+      <button @click="goPath">测试goTo方法，去登录页面</button>
     </p>
 
     <p style="margin-top: 1rem">
@@ -49,6 +49,9 @@ export default {
   },
 
 	methods: {
+    goPath() {
+      this.goTo('/login', this.aaa);
+    },
     async getArtDetail() {
       let data = await getArticleDetail(78);
       console.log(data);
