@@ -8,7 +8,7 @@
     </mt-header>
 
     <router-view/>
-  
+
     <!-- 底部tabBar -->
     <Footer v-show="isShowTabbar" :footerList="footerList" :currentTab="currentTab" />
   </div>

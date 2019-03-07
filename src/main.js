@@ -9,7 +9,7 @@ import store from './store'
 import axios from './http'
 Vue.prototype.$http = axios;
 
-// 按需引入mint-ui
+// 按需引入mint-ui 先安装 babel-plugin-component
 import 'mint-ui/lib/style.css'
 import { 
   Tabbar,
@@ -26,6 +26,9 @@ Vue.component(Button.name, Button);
 // 完整按需引入mint-ui
 // import Mint from 'mint-ui';
 // Vue.use(Mint);
+
+import { Cell, CellGroup, Tag, Icon, NavBar } from 'vant';
+Vue.use(Cell).use(CellGroup).use(Tag).use(Icon).use(NavBar);
 
 //引入工具库
 import './utils.js'

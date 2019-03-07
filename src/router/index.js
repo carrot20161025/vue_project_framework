@@ -10,7 +10,7 @@ import myCenter from "./myCenter/"
 import shoppingCart from "./shoppingCart/"
 
 export default new Router({
-	mode: 'history',
+	// mode: 'history',
   routes: [
   	{
     	path: '/reg',

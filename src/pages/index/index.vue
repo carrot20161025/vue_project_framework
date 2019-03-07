@@ -2,24 +2,24 @@
   <div>
     首页 <br>
     vuex中的count： {{count}}<br>
-    <p style="margin-top: 1rem">
+    <p>
     	<button @click="add">点击+1</button>
     	<button @click="random">点击增加一个随机数</button>
     </p>
 
-    <p style="margin-top: 1rem">
+    <p>
       <button @click="showTabBar">显示tabBar（vuex控制显示/隐藏状态）</button>
     </p>
 
-    <p style="margin-top: 1rem">
+    <p>
       <button @click="hideTabBar">隐藏tabBar（vuex控制显示/隐藏状态）</button>
     </p>
 
-    <p style="margin-top: 1rem">
+    <p>
       <button @click="goPath">测试goTo方法，去登录页面</button>
     </p>
 
-    <p style="margin-top: 1rem">
+    <p>
       <button @click="getArtDetail">测试获取文章详情接口</button>
     </p>
   </div>
